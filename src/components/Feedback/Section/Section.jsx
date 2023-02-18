@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Section = ({ title }) => {
   return (
     <>
@@ -9,3 +11,7 @@ const Section = ({ title }) => {
 };
 
 export default Section;
+
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+};
